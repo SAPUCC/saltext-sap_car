@@ -55,7 +55,7 @@ def __virtual__():
 
 def extracted(name, options=None, output_dir=None, user=None, group=None):
     """
-    Extracts a SAPCAR archive if necessar.
+    Extracts a SAPCAR archive if necessary.
 
     name
         Path to the sar file to be extracted
