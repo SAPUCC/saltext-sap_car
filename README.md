@@ -1,24 +1,32 @@
-**Please update this template to fit your project.**
-- [ ] Update `CHANGELOG.md`
-- [ ] Update `CONTRIBUTING.md`
-- [ ] Update `COPYRIGHT.md`
-- [ ] Update `.gitignore`
-- [ ] Update this `README.md`
+# SaltStack SAPCAR extension
+This SaltStack extention allows the handling of SAPCAR archives over states. Right now,
+only extraction is supported as it is the biggest use case.
 
-# Project title
-*Short description*
+**THIS PROJECT IS NOT ASSOCIATED WITH SAP IN ANY WAY**
 
 ## Installation
-*Installation steps (including requirements)*
+Run the following to install the SaltStack SAPCAR extension:
+```bash
+pip3 install saltext-sap_car
+```
+Keep in mind that this package must be installed on every minion that should utilize the states and
+execution modules.
 
 ## Usage
-````
-# Comment on a code line
-code.example(parameter x)
-````
+A state using the SAPCAR extension looks like this:
+```jinja
+SAProuter is extracted:
+  ucp_sap_car.extracted:
+    - name: /mnt/nfs/saprouter.sar
+    - output_dir: /usr/sap/saprouter/
+    - user: root
+    - group: root
+    - require:
+      - pkg: SAPCAR is installed
+```
 
 ## Docs
-*Link to docs (if any)*
+See https://saltext-sap_car.readthedocs.io/ for the documentation.
 
 ## Contributing
 We would love to see your contribution to this project. Please refer to `CONTRIBUTING.md` for further details.
