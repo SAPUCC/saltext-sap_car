@@ -7,7 +7,7 @@ only extraction is supported as it is the biggest use case.
 ## Installation
 Run the following to install the SaltStack SAPCAR extension:
 ```bash
-pip3 install saltext-sap_car
+salt-call pip.install saltext-sap_car
 ```
 Keep in mind that this package must be installed on every minion that should utilize the states and
 execution modules.
@@ -16,7 +16,7 @@ execution modules.
 A state using the SAPCAR extension looks like this:
 ```jinja
 SAProuter is extracted:
-  ucp_sap_car.extracted:
+  sap_car.extracted:
     - name: /mnt/nfs/saprouter.sar
     - output_dir: /usr/sap/saprouter/
     - user: root
@@ -26,7 +26,7 @@ SAProuter is extracted:
 ```
 
 ## Docs
-See https://saltext-sap_car.readthedocs.io/ for the documentation.
+See https://saltext-sap-car.readthedocs.io/ for the documentation.
 
 ## Contributing
 We would love to see your contribution to this project. Please refer to `CONTRIBUTING.md` for further details.
