@@ -7,7 +7,7 @@ only extraction is supported as it is the biggest use case.
 ## Installation
 Run the following to install the SaltStack SAPCAR extension:
 ```bash
-salt-call pip.install saltext-sap_car
+salt-call pip.install saltext.sap-car
 ```
 Keep in mind that this package must be installed on every minion that should utilize the states and
 execution modules.
