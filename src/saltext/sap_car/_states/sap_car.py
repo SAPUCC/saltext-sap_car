@@ -82,9 +82,7 @@ def extracted(name, options=None, output_dir=None, user=None, group=None):
     }
 
     log.debug("Listing files of archive")
-    archive_file_list = __salt__["sap_car.list"](
-        path=name, user=user, group=group
-    )
+    archive_file_list = __salt__["sap_car.list"](path=name, user=user, group=group)
     if not isinstance(archive_file_list, list):
         log.error("An error occured during list of files")
         ret["comment"] = "An error occured during list of files, check the log files"
