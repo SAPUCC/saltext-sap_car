@@ -45,10 +45,10 @@ def __virtual__():
     """
     Only works on Linux and if SAPCAR is available in PATH
     """
-    if __virtualname__ not in __salt__:
+    if "sap_car.list" not in __salt__:
         return (
             False,
-            f"The {__virtualname__} execution module failed to load.",
+            "The sap_car execution module failed to load.",
         )
     return __virtualname__
 
