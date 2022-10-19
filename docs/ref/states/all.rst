@@ -8,4 +8,4 @@ State Modules
 .. autosummary::
     :toctree:
 
-    saltext.sap_car.states.sap_car
+    saltext.sap_car._states.sap_car
