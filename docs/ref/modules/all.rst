@@ -8,4 +8,4 @@ Execution Modules
 .. autosummary::
     :toctree:
 
-    saltext.sap_car.modules.sap_car
+    saltext.sap_car._modules.sap_car

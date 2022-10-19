@@ -1,6 +1,6 @@
 """
 SaltStack extension for SAPCAR
-Copyright (C) 2022  Benjamin Wegener
+Copyright (C) 2022 SAP UCC Magdeburg
 
 SAPCAR States
 =============
