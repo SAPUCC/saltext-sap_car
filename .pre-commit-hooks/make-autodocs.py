@@ -14,8 +14,8 @@ all_states = []
 all_mods = []
 docs_path = Path("docs")
 ref_path = docs_path / "ref"
-mod_path = ref_path / "modules"
-state_path = ref_path / "states"
+mod_path = ref_path / "_modules"
+state_path = ref_path / "_states"
 
 for path in Path("src").glob("**/*.py"):
     if path.name == "__init__.py":

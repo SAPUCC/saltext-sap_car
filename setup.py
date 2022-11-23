@@ -9,8 +9,9 @@ with version_path.open() as f:
     for line in f:
         if line.startswith("__version__"):
             # We only want the bare string pls
-            line = line.partition("#")[0]
-            version = line.partition("=")[-1].strip().strip('"').strip("'")
+            line = line.partition("=")[-1].strip()  # get only value
+            line = line.partition("#")[0].strip()  # remove possible
+            version = line.strip('"').strip("'")
             break
     else:
         version = "0.0.1dev1"
