@@ -6,7 +6,7 @@ SAPCAR execution modules
 ========================
 Execution modules to manage SAPCAR archives
 
-:codeauthor: Benjamin Wegener <wegener.benjamin@googlemail.com>
+:codeauthor: Benjamin Wegener
 :maturity:   new
 :depends:    N/A
 :platform:   Linux
